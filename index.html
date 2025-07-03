@@ -54,3 +54,94 @@
       border: 1px solid #ccc;
       outline: none;
       transition: border 0.2s;
+ }
+    form input:focus {
+      border: 1.5px solid #9a8c98;
+    }
+    form button {
+      background: linear-gradient(90deg, #a1c4fd 0%, #c2e9fb 100%);
+      color: #22223b;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      transition: background 0.2s;
+    }
+    form button:hover {
+      background: linear-gradient(90deg, #c2e9fb 0%, #a1c4fd 100%);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    th, td {
+      padding: 0.8rem 1rem;
+      text-align: left;
+    }
+    th {
+      background: #4a90e2;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    tr:nth-child(even) {
+      background: #f2e9e4;
+    }
+    tr:hover {
+      background: #a1c4fd33;
+    }
+    .actions button {
+      margin-right: 0.5rem;
+      background: #4a4e69;
+      color: #fff;
+      border: none;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .actions button:hover {
+      background: #a1c4fd;
+      color: #22223b;
+    }
+    @media (max-width: 700px) {
+      .container { padding: 1rem; }
+      form { flex-direction: column; gap: 0.5rem; }
+      th, td { padding: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>CacheLabs Startup System</header>
+  <div class="container">
+    <h2>Mentors</h2>
+    <form id="mentorForm">
+      <input type="hidden" id="mentorId">
+      <input type="text" id="mentorName" placeholder="Name" required>
+      <input type="text" id="mentorExpertise" placeholder="Expertise">
+      <input type="text" id="mentorContact" placeholder="Contact">
+      <button type="submit">Save Mentor</button>
+    </form>
+    <table id="mentorsTable"></table>
+
+    <h2>Startups</h2>
+    <form id="startupForm">
+      <input type="hidden" id="startupId">
+      <input type="text" id="startupName" placeholder="Name" required>
+      <input type="text" id="startupFocus" placeholder="Focus Area">
+      <input type="text" id="startupStage" placeholder="Stage">
+      <input type="number" id="startupFunding" placeholder="Funding Received">
+      <input type="number" id="startupMentorId" placeholder="Mentor ID">
+      <button type="submit">Save Startup</button>
+    </form>
+    <table id="startupsTable"></table>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html> 
