@@ -6,7 +6,7 @@
       <h1>Cache Lab</h1>
       <div id="Main-box">
         <h2>Appication for smart Green card</h2>
-        <div id="msg"></div>div>
+        <div id="msg"></div>
         <form id="card-form">
           <label
             >First Name:
@@ -19,7 +19,50 @@
           <lable
             >Nationality:
             <input name="nationality" required />
-          </lable>
+          </lable> 
+          <label
+            >Passport_number:
+            <input name="Passport_number" required />
+          </label>
+          <label
+            >Employement Type:
+            <input name="employement_type" required />
+          </label>
+          <label
+            >Status:
+            <select name="status" required>
+              <option value="Active">Active</option>
+              <option value="Expired">Expired</option>
+              <option value="Pending">Pending</option>
+            </select>
+          </label>
+          <button type="Submit">Submit Application</button>
+          <button type="Reset">clear</button>
+          </form>
+      <h3 style="margin-top: 32px">All Applications</h3>
+      <table id="cards-table">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Passport Number</th>
+            <th>Card Number</th>
+            <th>Issue Date</th>
+            <th>Expiry Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button
+        class="apply-btn"
+        onclick="document.getElementById('card-form').scrollIntoView({behavior: 'smooth'});"
+      >
+        Apply for Smart Green Card
+      </button>
+    </div>
   <script src="index.js"></script>
+  <style src="index.css"></style>
 </body>
 </html> 
