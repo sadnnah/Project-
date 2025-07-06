@@ -1,1 +1,131 @@
-
+body {
+        background: #f8f9fa;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        background: #228be6;
+        color: #fff;
+        margin: 0;
+        padding: 16px;
+        text-align: center;
+      }
+      h2 {
+        color: #228be6;
+        margin: 24px 0 16px 0;
+        text-align: center;
+        font-size: 1.5em;
+      }
+      #main-box {
+        background: #fff;
+        max-width: 600px;
+        margin: 32px auto;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px #dee2e6;
+        padding: 24px;
+      }
+      label {
+        display: block;
+        margin: 12px 0 4px 0;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 6px;
+        margin-bottom: 10px;
+        border: 1px solid #ced4da;
+        border-radius: 4px;
+      }
+      button[type="submit"] {
+        background: #51cf66;
+        color: #222;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-right: 8px;
+      }
+      button[type="reset"] {
+        background: #ffa94d;
+        color: #222;
+        border: none;
+        padding: 8px 18px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #msg {
+        display: none;
+        margin-bottom: 12px;
+        padding: 8px;
+        border-radius: 4px;
+        color: #222;
+        font-weight: bold;
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 24px;
+      }
+      th,
+      td {
+        border: 1px solid #adb5bd;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background: #228be6;
+        color: #fff;
+      }
+      .edit-btn {
+        background: #a5d8ff;
+        border: none;
+        color: #222;
+        padding: 4px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .delete-btn {
+        background: #ffa8a8;
+        border: none;
+        color: #222;
+        padding: 4px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .status.active {
+        background: #b2f2bb;
+        color: #222;
+        padding: 2px 8px;
+        border-radius: 4px;
+      }
+      .status.expired {
+        background: #ffa8a8;
+        color: #222;
+        padding: 2px 8px;
+        border-radius: 4px;
+      }
+      .status.pending {
+        background: #ffe066;
+        color: #222;
+        padding: 2px 8px;
+        border-radius: 4px;
+      }
+      .apply-btn {
+        display: block;
+        margin: 32px auto 0 auto;
+        background: #228be6;
+        color: #fff;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 6px;
+        font-size: 1.1em;
+        cursor: pointer;
+        text-align: center;
+        transition: background 0.2s;
+      }
+      .apply-btn:hover {
+        background: #1864ab;
+      }
+  
