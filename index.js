@@ -27,3 +27,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
     }
+     function addRow(app) {
+        var row = tableBody.insertRow();
+        row.innerHTML =
+            '<td>' + app.first_name + '</td>' +
+            '<td>' + app.last_name + '</td>' +
+            '<td>' + app.passport_number + '</td>' +
+            '<td>' + app.card_number + '</td>' +
+            '<td>' + app.issue_date + '</td>' +
+            '<td>' + app.expiry_date + '</td>' +
+            '<td><span class="status ' + app.status.toLowerCase() + '">' + app.status + '</span></td>' +
+            '<td>' +
+                '<button class="edit-btn" onclick="editApplication(' + app.id + ')">Edit</button>' +
+                '<button class="delete-btn" onclick="deleteApplication(' + app.id + ')">Delete</button>' +
+            '</td>';
+    }
