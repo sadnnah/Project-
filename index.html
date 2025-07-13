@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>CacheLabs Pvt LTD</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-    <body> 
-      <h1>Cache Lab PVT LTD</h1>
-      <div id="Main-box">
-        <h2>Appication for smart Green card</h2>
-        <div id="msg"></div>
-        <form id="card-form">
-          <label
-            >First Name:
-            <input name="first_name" required />
-          </label>
-          <label
-            >Last Name:
-            <input name="last_name" required />
-          </label>
-          <lable
-            >Nationality:
-            <input name="nationality" required />
-          </lable> 
-          <label
-            >Passport_number:
-            <input name="Passport_number" required />
-          </label>
-          <label
-            >Employement Type:
-            <input name="employement_type" required />
-          </label>
-          <label
-            >Status:
-            <select name="status" required>
-              <option value="Active">Active</option>
-              <option value="Expired">Expired</option>
-              <option value="Pending">Pending</option>
-            </select>
-          </label>
-          <button type="Submit">Submit Application</button>
-          <button type="Reset">clear</button>
-          </form>
+  <head>
+    <title>Cache Lab PVT Ltd</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+    <h1>Cache Lab</h1>
+    <div id="main-box">
+      <h2>Apply for Smart Green Card</h2>
+      <div id="msg"></div>
+      <form id="card-form">
+        <label
+          >First Name:
+          <input name="first_name" required />
+        </label>
+        <label
+          >Last Name:
+          <input name="last_name" required />
+        </label>
+        <label
+          >Nationality:
+          <input name="nationality" required />
+        </label>
+        <label
+          >Passport Number:
+          <input name="passport_number" required />
+        </label>
+        <label
+          >Employment Type:
+          <input name="employment_type" required />
+        </label>
+        <label
+          >Status:
+          <select name="status" required>
+            <option value="Active">Active</option>
+            <option value="Expired">Expired</option>
+            <option value="Pending">Pending</option>
+          </select>
+        </label>
+        <button type="submit">Submit Application</button>
+        <button type="reset">Clear</button>
+      </form>
       <h3 style="margin-top: 32px">All Applications</h3>
       <table id="cards-table">
         <thead>
@@ -57,14 +57,9 @@
         </thead>
         <tbody></tbody>
       </table>
-      <button
-        class="apply-btn"
-        onclick="document.getElementById('card-form').scrollIntoView({behavior: 'smooth'});"
-      >
-        Apply for Smart Green Card
-      </button>
+
     </div>
-  <script src="index.js"></script>
-  <style src="index.css"></style>
-</body>
-</html> 
+    <script src="/static/script.js"></script>
+  </body>
+</html>
+
