@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import sqlite3
 import random
@@ -31,16 +31,18 @@ with get_db() as db:
     ''')
 
 def generate_card_number():
+    
     return ''.join([str(random.randint(0,9)) for _ in range(12)])
 
 def get_dates():
+    
     today = datetime.now().date()
     expiry = today + timedelta(days=365*10)
     return today.isoformat(), expiry.isoformat()
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return send_from_directory('.', 'index.html')
 
 @app.route('/api/cards', methods=['GET'])
 def get_cards():
@@ -50,7 +52,10 @@ def get_cards():
 
 @app.route('/api/cards', methods=['POST'])
 def add_card():
-    data = request.json
+    data = request.get_json()
+    if not data:
+        return jsonify({'error': 'No JSON data provided'}), 400
+    
     card_number = generate_card_number()
     issue_date, expiry_date = get_dates()
     db = get_db()
@@ -58,33 +63,36 @@ def add_card():
         INSERT INTO cards (first_name, last_name, nationality, passport_number, employment_type, card_number, issue_date, expiry_date, status)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     ''', (
-        data['first_name'],
-        data['last_name'],
-        data['nationality'],
-        data['passport_number'],
-        data['employment_type'],
+        data.get('first_name'),
+        data.get('last_name'),
+        data.get('nationality'),
+        data.get('passport_number'),
+        data.get('employment_type'),
         card_number,
         issue_date,
         expiry_date,
-        data['status']
+        data.get('status')
     ))
     db.commit()
     return jsonify({'message': 'Application submitted!', 'card_number': card_number}), 201
 
 @app.route('/api/cards/<int:card_id>', methods=['PUT'])
 def update_card(card_id):
-    data = request.json
+    data = request.get_json()
+    if not data:
+        return jsonify({'error': 'No JSON data provided'}), 400
+    
     db = get_db()
     db.execute('''
         UPDATE cards SET first_name=?, last_name=?, nationality=?, passport_number=?, employment_type=?, status=?
         WHERE id=?
     ''', (
-        data['first_name'],
-        data['last_name'],
-        data['nationality'],
-        data['passport_number'],
-        data['employment_type'],
-        data['status'],
+        data.get('first_name'),
+        data.get('last_name'),
+        data.get('nationality'),
+        data.get('passport_number'),
+        data.get('employment_type'),
+        data.get('status'),
         card_id
     ))
     db.commit()
