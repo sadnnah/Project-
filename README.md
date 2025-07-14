@@ -1,14 +1,16 @@
 # Project-Programing-
 
-Company Name and description: CacheLabs. 
+**Company Name and description**: 
+<br>
+CacheLabs 
 
-1.Cache Labs develops platforms like Smart Green Card (US Green Card application), Proximity (creator-investor matching), and Smart Immigrant (immigration assistance).
-2.They focus on green energy, startups, AI, and immigration, supporting teams tackling global challenges.
-3.Cache Labs provides funding, resources, and mentorship to startups, fostering innovation and growth.
-4.The company boasts 2M+ revenue, 5+ successful businesses, 100+ team members, and 500+ happy customers.
+1.Cache Labs develops platforms like Smart Green Card (US Green Card application), Proximity (creator-investor matching), and Smart Immigrant (immigration assistance).<br>
+2.They focus on green energy, startups, AI, and immigration, supporting teams tackling global challenges.<br>
+3.Cache Labs provides funding, resources, and mentorship to startups, fostering innovation and growth.<br>
+4.The company boasts 2M+ revenue, 5+ successful businesses, 100+ team members, and 500+ happy customers.<br>
 
 
-IDEA:
+**IDEA**:
 
 implement web app to apply for a Smart Green Card.
 
