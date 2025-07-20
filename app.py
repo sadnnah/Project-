@@ -107,3 +107,6 @@ def delete_card(card_id):
 
 if __name__ == '__main__':
     app.run(debug=True) 
+
+# had taken help from the YouTube channel to build API calls https://www.google.com/search?q=crud+operations+using+python&oq=crud+operations+using+python&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCAgJEAAYFhge0gEIODI5NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d92aca2d,vid:d1YEWdACKj4,st:0 https://www.youtube.com/@IshaanSharma7
+# had taken help from a friend 
