@@ -24,6 +24,26 @@ Google Maps link to the company:https://g.co/kgs/WmXR5f1
 
  **REFERENCES**
 
- had taken help from the YouTube channel to build API calls https://www.google.com/search?q=crud+operations+using+python&oq=crud+operations+using+python gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCAgJEAAYFhge0gEIODI5NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d92aca2d,vid:d1YEWdACKj4,st:0 https://www.youtube.com/@IshaanSharma7
+ # https://chatgpt.com/share/6887d9fb-d5e8-8000-bb54-c70a02f2118f reference for the methods using AI
 
-had taken help from a friend 
+# https://g.co/gemini/share/7061f3ad0d37 
+
+# for database.db i have taken help from my friend.
+
+# had taken help from the YouTube channel to build API calls https://www.google.com/search?q=crud+operations+using+python&oq=crud+operations+using+python&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCAgJEAAYFhge0gEIODI5NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d92aca2d,vid:d1YEWdACKj4,st:0 https://www.youtube.com/@IshaanSharma7
+#  https://chatgpt.com/share/6887dbc9-f1f4-8000-a259-8587e8540b55
+
+// https://chatgpt.com/share/6887dc84-cc78-8000-bb8a-a8fded954345
+
+// https://chatgpt.com/share/6887dd31-cf3c-8000-8573-dfa35a5d767e
+
+// https://chatgpt.com/share/6887dd9d-77d4-8000-8928-f209246c6204
+
+// https://g.co/gemini/share/402cfa0e172d
+
+
+// https://g.co/gemini/share/b9d5377ad0ae
+
+
+ had taken help from the YouTube channel to build API calls https://www.google.com/search?q=crud+operations+using+python&oq=crud+operations+using+python 
+ 

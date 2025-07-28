@@ -1,3 +1,12 @@
+# https://chatgpt.com/share/6887d9fb-d5e8-8000-bb54-c70a02f2118f reference for the methods using AI
+# https://g.co/gemini/share/7061f3ad0d37 
+# for database.db i have taken help from my friend.
+# had taken help from the YouTube channel to build API calls https://www.google.com/search?q=crud+operations+using+python&oq=crud+operations+using+python&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIICAIQABgWGB4yCAgDEAAYFhgeMggIBBAAGBYYHjIICAUQABgWGB4yCAgGEAAYFhgeMggIBxAAGBYYHjIICAgQABgWGB4yCAgJEAAYFhge0gEIODI5NWowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d92aca2d,vid:d1YEWdACKj4,st:0 https://www.youtube.com/@IshaanSharma7
+#  https://chatgpt.com/share/6887dbc9-f1f4-8000-a259-8587e8540b55
+
+
+
+
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import sqlite3

@@ -1,5 +1,15 @@
+// https://chatgpt.com/share/6887dc84-cc78-8000-bb8a-a8fded954345
+
+// https://chatgpt.com/share/6887dd31-cf3c-8000-8573-dfa35a5d767e
+
+// https://chatgpt.com/share/6887dd9d-77d4-8000-8928-f209246c6204
+
+// https://g.co/gemini/share/402cfa0e172d
+
+// https://g.co/gemini/share/b9d5377ad0ae
+
 document.addEventListener('DOMContentLoaded', function() {
-    
+    // Makes a GET request to '/api/cards' to fetch all applications
     var form = document.getElementById('card-form');
     var tableBody = document.getElementById('cards-table').getElementsByTagName('tbody')[0];
     var msg = document.getElementById('msg');
@@ -17,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadApplications() {
         fetch('/api/cards')
             .then(function(res) { return res.json(); })
+            // After receiving a response, parses it as JSON.
+                // 'res.json()' returns another Promise.
             .then(function(applications) {
                 tableBody.innerHTML = '';
                 if (applications.length === 0) {
